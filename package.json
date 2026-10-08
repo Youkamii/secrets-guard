@@ -1,0 +1,20 @@
+{
+  "name": "secrets-guard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Claude Code PreToolUse hook that blocks git add/commit when staged files contain API keys, passwords, tokens or .env files",
+  "type": "module",
+  "license": "MIT",
+  "author": "Youkamii",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Youkamii/secrets-guard.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test hooks/secrets-guard.test.mjs",
+    "install-hook": "node install.mjs"
+  }
+}
